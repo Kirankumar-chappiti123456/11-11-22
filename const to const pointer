@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+    int a=12,b=30;
+    const int *const ptr=&a;
+    *ptr=200;
+    *ptr=&b;
+    printf("%p",ptr);
+    printf("%p",&a);
+}
